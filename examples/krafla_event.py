@@ -7,13 +7,7 @@ Commented example script for inversion of a krafla event, with more in depth exp
 
 def run(case='PPolarity', parallel=True, test=False):
     # Import inversion
-    try:
-        from mtfit.core import run as mtfit
-    except:
-        import sys
-        sys.path.insert(0, '../src/mtfit')
-        from run import run as mtfit
-
+    from mtfit.run import mtfit
     if test:
 
         # Get Data
